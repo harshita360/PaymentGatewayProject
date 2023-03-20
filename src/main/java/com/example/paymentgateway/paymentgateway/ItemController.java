@@ -23,6 +23,11 @@ public class ItemController {
 	
 	
 	
+	@GetMapping("/message")
+	public String getMessage() {
+		return "welcome";
+	}
+	
 	@GetMapping("/getpayments")
 	public ResponseEntity<List<Transaction>> getallTransactions(){
 		try {
